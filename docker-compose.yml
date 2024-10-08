@@ -4,7 +4,7 @@ services:
     build: .  # Dockerfile sẽ được sử dụng từ thư mục hiện tại
     image: shinc07/web-test-docker:latest
     ports:
-      - "8080:8080"
+      - "8000:8080"
     volumes:
       - .:/usr/src/app  # Liên kết thư mục hiện tại với thư mục trong container
     environment:
