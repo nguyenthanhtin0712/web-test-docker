@@ -8,7 +8,7 @@ services:
     volumes:
       - .:/usr/src/app  # Liên kết thư mục hiện tại với thư mục trong container
     environment:
-      - ENV=production  # Ví dụ về biến môi trường, có thể điều chỉnh theo ứng dụng của bạn
+      - DJANGO_SETTINGS_MODULE=PythonWeb.settings  # Ví dụ về biến môi trường, có thể điều chỉnh theo ứng dụng của bạn
     networks:
       - webnet
 
